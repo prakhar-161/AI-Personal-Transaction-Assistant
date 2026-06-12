@@ -1,6 +1,6 @@
-# Transaction AI Assistant 💳🤖
+# Personal Transaction AI Assistant 💳🤖
 
-An AI-powered transaction assistant that uses a **RAG (Retrieval-Augmented Generation)** pipeline to let users query and analyze their financial data using natural language.
+An AI-powered Personal Transaction Assistant that uses a **RAG (Retrieval-Augmented Generation)** pipeline to let users query and analyze their financial data using natural language.
 
 ## 🚀 Features
 
