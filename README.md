@@ -1,16 +1,45 @@
-# React + Vite
+# Transaction AI Assistant 💳🤖
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered transaction assistant that uses a **RAG (Retrieval-Augmented Generation)** pipeline to let users query and analyze their financial data using natural language.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Ask questions about your transactions in plain English
+- RAG-based context retrieval for accurate answers
+- Real-time financial insights
+- Spending analysis by category
+- Duplicate transaction detection
+- Clean and responsive UI
 
-## React Compiler
+## 🧠 How it Works
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Transactions are stored and embedded
+2. FAISS retrieves relevant transaction context
+3. LLM generates intelligent responses using retrieved data
+4. FastAPI backend serves results to React frontend
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Frontend: React
+- Backend: FastAPI
+- AI: LLM (Groq / OpenAI compatible)
+- RAG: FAISS + embeddings (sentence-transformers)
+- Vector DB: FAISS
+- LangChain
+
+## 📌 Use Cases
+
+- Personal finance assistant
+- Banking analytics tool
+- Smart financial dashboards
+- AI-powered expense tracking
+
+## ⚡ Getting Started
+
+```bash
+# Backend
+python3 -m uvicorn app:app --reload --host 0.0.0.0 --port 8000
+
+# Frontend
+npm install
+npm run dev
